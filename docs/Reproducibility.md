@@ -3,6 +3,14 @@
 In the testing below, it assumes that
 1. You have installed DeepRepeat and its dependent packages. If not, please refer to `README.md` to install them
 2. Your current folder have the DeepRepeat folder which have been well compiled according the last step.
+3. The following folder organization is expected:
+	./
+		DeepRepeat/
+		trainedmod_32_0.2/
+		test_op/
+		htt12/
+		na12878_loci/
+		strique_g4c2_data/
 
 
 ## Reproduce results for 9 loci and other loci
