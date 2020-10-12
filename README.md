@@ -7,7 +7,16 @@ In DeepRepeat, we reasonably assume that directly adjacent repeats share similar
 There is specific hardware requirements to use DeepRepeat if you can successfully install all dependent packages. If you want to train your own DeepRepeat models, you need a computing node with tens of GB memory.
 
 ## Software requirements
-
+Please refer to `environment.yml` for detail. For your quick reference, DeepRepeat needs
+```
+  - python=3.6
+  - hdf5=1.10.1
+  - htslib=1.9
+  - scikit-learn
+  - tensorflow=1.9
+  - samtools
+  - minimap2
+```
 
 # Installation
 It is easy to install the dependent packages of DeepRepeat using `annoconda`. Thus, please install `annoconda` first, and then follow the commands below to install DeepRepeat.
