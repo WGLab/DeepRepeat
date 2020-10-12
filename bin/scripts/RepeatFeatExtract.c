@@ -188,6 +188,8 @@ int RepeatFeatExtract::_generate_fs(const Bam1Record & b1r, int16_t c_rep_label,
 }
 
 int RepeatFeatExtract::_get_repeat_feature(std::vector<FeatSpace>& fs_repeat, std::vector<FeatSpaceOther>& fs_repeat_other){
+   RepeatFeatExtract::repeat_regions_in_genome.insert(_bam_reader->bamReadOp.repdict.begin(), _bam_reader->bamReadOp.repdict.end());
+
    int32_t m_nb_size = 0; // _nb_size
    std::ofstream m_output_to_file;
    std::ofstream m_output_other_to_file;

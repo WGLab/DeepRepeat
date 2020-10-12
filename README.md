@@ -4,10 +4,28 @@ In DeepRepeat, we reasonably assume that directly adjacent repeats share similar
 
 # System requirements
 ## Hardware requirements
+There is specific hardware requirements to use DeepRepeat if you can successfully install all dependent packages. If you want to train your own DeepRepeat models, you need a computing node with tens of GB memory.
 
 ## Software requirements
 
+
 # Installation
+It is easy to install the dependent packages of DeepRepeat using `annoconda`. Thus, please install `annoconda` first, and then follow the commands below to install DeepRepeat.
+
+```
+git clone https://github.com/WGLab/DeepRepeat
+cd DeepRepeat
+conda env create -f environment.yml
+source activate py36deeprepeat   #if you change conda env name, please replace `py36deeprepeat`
+cd bin/scripts
+export DR_conda_base="./" #"/home/liuq1/anaconda2"  #replace this folder for your own annoconda folder
+g++ -O3 -std=c++11 -o IndexF5files ComFunction.c Fast5Index.c IndexF5files.c
+h5c++ -O3 -std=c++11 -I $DR_conda_base/include -L$DR_conda_base/lib -lhts -o genomic1FE ComFunction.c ComOption.c BamReader.c Fast5Index.c Fast5Reader.c RepeatFeatExtract.c genomic1FE.c
+cd ../../
+```
+
+Then, you can run `python DeepRepeat.py`
+
 
 # General Usage
 
@@ -19,4 +37,4 @@ Please refer to the [DeepRepeat issue pages](https://github.com/WGLab/DeepRepeat
 
 # Citing DeepRepeat
 ***Please cite the publication below if you use our tool***
-Qian Liu, Li Fang, Alex Mas Monteys, Shauna A. Ebanks, Beverly L. Davidson, Kai Wang. Estimation of short tandem repeats by deep learning on Oxford Nanopore sequencing signals data. 
+Qian Liu, Li Fang, Alex Mas Monteys, Beverly L. Davidson, Kai Wang. Estimation of short tandem repeats by deep learning on Oxford Nanopore sequencing signals data. 

@@ -1,6 +1,6 @@
 
 import os, sys
-import Repeat_CNN_model_motif2 as Repeat_CNN_model
+from . import Repeat_CNN_model_motif2 as Repeat_CNN_model
 from collections import defaultdict;
 import numpy as np
 import time;

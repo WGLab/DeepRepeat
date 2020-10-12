@@ -1,0 +1,13 @@
+name: py36deeprepeat
+channels:
+  - bioconda
+  - anaconda
+  - defaults
+dependencies:
+  - python=3.6
+  - hdf5=1.10.1
+  - htslib=1.9
+  - scikit-learn
+  - tensorflow=1.9
+  - samtools
+  - minimap2

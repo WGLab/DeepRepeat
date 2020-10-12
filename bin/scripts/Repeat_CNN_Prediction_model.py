@@ -7,8 +7,8 @@ import time;
 import copy
 import glob
 
-from myHeader import *
-import myGaussianMixtureModel
+from . import myHeader
+from . import myGaussianMixtureModel
 
 import tensorflow as tf
 
@@ -262,7 +262,7 @@ def get_rep_group(rep_u_k):
    for _ap_i in range(1, len(rep_u_k)):
       rep_u_k_list.append(rep_u_k_list[-1][1:]+rep_u_k_list[-1][0])
    for _ruk in range(len(rep_u_k)):
-      rep_u_k_list.append(getComplementary3(NA_bp_, rep_u_k_list[_ruk]))
+      rep_u_k_list.append(getComplementary3(myHeader.NA_bp_, rep_u_k_list[_ruk]))
    rep_u_k_list = sorted(rep_u_k_list)
    return rep_u_k_list[0]
 
@@ -289,7 +289,7 @@ if __name__=='__main__':
 
    if sys.argv[12] == 'pcr':
       prg_options['pcr'] = 1
-   prg_options['outlog'] = M_DEBUG
+   prg_options['outlog'] = myHeader.M_DEBUG
 
    p_options = {}
    p_options['repeat_unit_size'] = int(sys.argv[7]);
