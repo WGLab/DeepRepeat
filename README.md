@@ -37,6 +37,65 @@ Then, you can run `python DeepRepeat.py`
 
 
 # General Usage
+After installation, simply type `python DeepRepeat/bin/DeepRepeat.py Detect` will tell you the options.
+```
+usage: DeepRepeat.py [-h] {Detect} ...
+
+Determine microsatellite repeat of interests using Nanopore signals.
+
+positional arguments:
+  {Detect}
+    Detect    Detect repeat counts of locus of interest
+
+optional arguments:
+  -h, --help  show this help message and exit
+
+For example,
+        python DeepRepeat.py Detect: detect repeat counts of locus of interest
+usage: DeepRepeat.py Detect [-h] [--f5folder F5FOLDER] [--bam BAM] [--o O]
+                            [--f5i F5I] [--repeat REPEAT]
+                            [--repeatName REPEATNAME] [--rpg RPG]
+                            [--f5config F5CONFIG] [--nbsize NBSIZE]
+                            [--is_pcr IS_PCR] [--UniqueID UNIQUEID]
+                            [--basecalled_path BASECALLED_PATH]
+                            [--summary_file SUMMARY_FILE] [--multif5 MULTIF5]
+                            [--mod_path MOD_PATH] [--epchon EPCHON]
+                            [--repeat_relax_bp REPEAT_RELAX_BP]
+                            [--TempRem TEMPREM] [--gn GN] [--algLen ALGLEN]
+
+Detect repeat counts of locus of interest
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --bam BAM             The bam file. Compulsory.
+  --o O                 The output folder. Compulsory.
+  --f5i F5I             The index of f5 files. If empty, `f5.f5index` under `f5folder` will be used. If not exist, `f5.f5index` will be created. Must end with "f5index".
+  --repeat REPEAT       The locus of repeat of interest. For example: "chr4:3074876-3074933:CAG:3". Compulsory.
+  --repeatName REPEATNAME
+                        The name of the repeat. Default:m_repeat.
+  --rpg RPG             The bed file for neighborhood repeat. If not provided, `data/trf.v0.bed` will be used.
+  --f5config F5CONFIG   The config file of basecalling. Default: data/config/fast5_path.config
+  --nbsize NBSIZE       The size for neighborhood(for feature generation). Minus values for percentage, while plus values for absolute size.
+  --is_pcr IS_PCR       Is the data is PCR-based. Default: False.
+  --UniqueID UNIQUEID   Unique name for the results. Default: "_mpred_".
+  --basecalled_path BASECALLED_PATH
+                        The basecalled f5 files under the data folder. Default: "workspace/pass/".
+  --summary_file SUMMARY_FILE
+                        The summary file of basecalling under the data folder. Default: "sequencing_summary.txt" under data folder.
+  --multif5 MULTIF5     Is multi-fast5 format. Default: False (single-fast5 format).
+  --mod_path MOD_PATH   The path of well-trained models. If not provided, it will be automatically generated according to repeat patterns. You need provide the path if you have your own trained models.
+  --epchon EPCHON       The well-trained models with epcho. Default: 200.
+  --repeat_relax_bp REPEAT_RELAX_BP
+                        Relaxed nb size (for prediction). Default: 15.
+  --TempRem TEMPREM     Will Temp files be removed? Default: True (yes).
+  --gn GN               Well-trained models for a genome('hx1', 'na12878' or 'hx1-na12878'). Default: 'hx1-na12878'.
+  --algLen ALGLEN       Minimal alignment length. Default: 100.
+
+Common options for DeepRepeat:
+  --f5folder F5FOLDER   The folder path where is the f5 files for Nanopore data.
+
+```
+
 
 # Revision history
 For release history, please visit [here](https://github.com/WGLab/DeepRepeat/releases). 
