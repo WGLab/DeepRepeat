@@ -151,7 +151,7 @@ The steps below are used to generate results of G4C2 results. Please note that y
 ```
 mkdir strique_g4c2_data/
 ```
-Then, download G4C2 data via . I recommended storing the basecalled data under `strique_g4c2_data/alb23/. Feel free to change the location of basecalled data but you need to change the location path below accordingly.
+Then, download G4C2 data via `wget https://ndownloader.figshare.com/files/15298166`, and then use Albacore for basecalling. I recommended storing the basecalled data under `strique_g4c2_data/alb23/. Feel free to change the location of basecalled data but you need to change the location path below accordingly.
 
 ### 2. Basecalling and alignment
 #### 2.1 Get fq files
