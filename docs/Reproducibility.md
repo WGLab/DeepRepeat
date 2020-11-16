@@ -3,7 +3,7 @@
 In the testing below, we assume that
 1. You have installed DeepRepeat and its dependent packages. If not, please refer to `README.md` to install them
 2. Your current folder have the DeepRepeat folder which have been well compiled according the last step.
-3. The following folder organization is expected:
+3. The following folder organization is expected. Although it is not necessary, you need to change the relative path if you have different testing folder orgnaization.
 ```
 	./
 		DeepRepeat/
