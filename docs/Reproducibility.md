@@ -73,7 +73,7 @@ python DeepRepeat/bin/DeepRepeat.py Detect --gn "hx1-na12878" --TempRem 0 --epch
 
 
 ## Reproduce results for 12 HTT samples
-The datasets of Nanopore long-read data for 12 HTT samples have been uploaded to SRA(PRJNA678742. The data will be available once the paper is accepted.). You need to download them or one of them firstly before you run the command below. Below, I assume that you have a sub-folder `htt12` which has a sub-folder for one of 12 HTT samples. Then, the command below can be run to get the results.
+The datasets of Nanopore long-read data for 12 HTT samples have been uploaded to SRA(PRJNA678742. The data will be available once the paper is accepted.). You need to download them or one of them firstly before you run the commands below. Similarly, I assume that you have a sub-folder `htt12` which has a sub-folder for one of 12 HTT samples. Then, the command below can be run to get the results.
 
 Firstly, make a log folder.
 ```
