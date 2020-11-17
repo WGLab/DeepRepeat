@@ -14,6 +14,14 @@ In the testing below, we assume that
 		strique_g4c2_data/
 ```
 
+## Download well-trained models.
+Run the commands below to simply download and unzip well-trained DeepRepeat models.
+```
+wget trainedmod_32_0.2.tar.gz
+tar -xvf trainedmod_32_0.2.tar.gz
+```
+It would be better to make the folder organization of well-trained model follow the expection above.
+
 ## Reproduce results for 9 loci and other loci
 
 ### For 9 loci
