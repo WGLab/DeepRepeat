@@ -96,6 +96,8 @@ Common options for DeepRepeat:
 
 ```
 
+# Testing examples
+Please refer to [Reproducible examples](https://github.com/WGLab/DeepRepeat/blob/master/docs/Reproducibility.md)
 
 # Revision history
 For release history, please visit [here](https://github.com/WGLab/DeepRepeat/releases). 
