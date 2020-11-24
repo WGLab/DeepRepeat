@@ -17,7 +17,7 @@ In the testing below, we assume that
 ## Download well-trained models.
 Run the commands below to simply download and unzip well-trained DeepRepeat models.
 ```
-wget trainedmod_32_0.2.tar.gz
+wget https://www.openbioinformatics.org/hx1/drmodel/trainedmod_32_0.2.tar.gz
 tar -xvf trainedmod_32_0.2.tar.gz
 ```
 It would be better to make the folder organization of well-trained model follow the expection above.
