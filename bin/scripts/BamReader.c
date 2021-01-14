@@ -53,7 +53,7 @@ int BamReadOption::set_repdict1(const std::string & m_str, std::string m_delimit
        if (pos_it==chr_dit->second.end()){
           (chr_dit->second)[_c_oss_pos.str()] = crr;
        }else{
-          std::cout<<"\t Warning!!! Repeat info already in the dict: "<<_c_oss_chr.str()<<":"<<_c_oss_pos.str()<< " ??? "<<chr_dit->first << ":" << pos_it->first<<std::endl;
+          ; //std::cout<<"\t Warning!!! Repeat info already in the dict: "<<_c_oss_chr.str()<<":"<<_c_oss_pos.str()<< " ??? "<<chr_dit->first << ":" << pos_it->first<<std::endl;
       }
    }
    

@@ -201,7 +201,7 @@ bool set_repdict(char* mrepfile){
              if (pos_it==chr_dit->second.end()){
                  (chr_dit->second)[oss_pos.str()] = crr;
              }else{
-                 std::cout<<"\t Warning!!! Repeat info already in the dict: "<<oss_chr.str()<<":"<<oss_pos.str()<< " ??? "<<chr_dit->first << ":" << pos_it->first<<std::endl;
+                 ; //std::cout<<"\t Warning!!! Repeat info already in the dict: "<<oss_chr.str()<<":"<<oss_pos.str()<< " ??? "<<chr_dit->first << ":" << pos_it->first<<std::endl;
              }
           }
       }
