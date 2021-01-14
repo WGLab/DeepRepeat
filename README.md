@@ -29,7 +29,8 @@ source activate py36deeprepeat   #if you change conda env name, please replace `
 cd bin/scripts
 export DR_conda_base="/home/xxx/anaconda2/envs/py36deeprepeat/"   #replace this folder for your own annoconda folder of py36deeprepeat
 g++ -O3 -std=c++11 -o IndexF5files ComFunction.c Fast5Index.c IndexF5files.c
-g++ -O3 -std=c++11 -I $DR_conda_base/include -L$DR_conda_base/lib -lhts -o genomic1FE ComFunction.c ComOption.c BamReader.c Fast5Index.c Fast5Reader.c RepeatFeatExtract.c genomic1FE.c $DR_conda_base//lib/libhdf5_hl_cpp.a $DR_conda_base//lib/libhdf5_cpp.a $DR_conda_base//lib/libhdf5_hl.a $DR_conda_base//lib/libhdf5.a -lz -ldl -lpthread
+# if you failed to run the command below and your h5c++ need something like x86_64-conda_cos6-linux-gnu-c++, please copy them via "cp /home/xxx/anaconda2/bin/x86_64-conda_cos6-linux-gnu-c++ /home/xxx/anaconda2/envs/py36deeprepeat/"
+h5c++ -O3 -std=c++11 -I $DR_conda_base/include -L$DR_conda_base/lib -lhts -o genomic1FE ComFunction.c ComOption.c BamReader.c Fast5Index.c Fast5Reader.c RepeatFeatExtract.c genomic1FE.c $DR_conda_base//lib/libhdf5_hl_cpp.a $DR_conda_base//lib/libhdf5_cpp.a $DR_conda_base//lib/libhdf5_hl.a $DR_conda_base//lib/libhdf5.a -lz -ldl -lpthread
 cd ../../
 ```
 
