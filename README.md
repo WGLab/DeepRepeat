@@ -16,12 +16,25 @@ Please refer to `environment.yml` for detail. For your quick reference, DeepRepe
   - tensorflow=1.9
   - samtools
   - minimap2
+  - gxx_linux-64
 ```
 
 # Installation
-If you have docker, a simple way to run DeepRepeat is to use docker without installation.
+## Install LongGF with docker
 
+If you have docker, a simple way to run DeepRepeat is to use docker. The simple commands is
+```
+docker run --rm genomicslab/deeprepeat:0.1.3
+```
 
+If you can want to build docker images for DeepRepeat, please follow the commands below:
+```
+git clone https://github.com/WGLab/DeepRepeat
+cd DeepRepeat
+docker build -t deeprepeat:0.1.3 .
+```
+
+## Install DeepRepeat via conda 
 It is also easy to install the dependent packages of DeepRepeat using `annoconda`. Thus, please install `annoconda` first, and then follow the commands below to install DeepRepeat.
 
 ```
