@@ -22,6 +22,7 @@ tar -xvf trainedmod_32_0.2.tar.gz
 ```
 It would be better to make the folder organization of well-trained model follow the expection above.
 
+
 ## Reproduce results for 9 loci and other loci
 
 ### For 9 loci
@@ -33,7 +34,7 @@ tar -xvf na12878_loci_nanopore.tar.gz
 
 You should have a subfolder `na12878_loci/` which contains 9 sub-folders for each of 9 loci. If no, please check your downloading or check the folder organization to make it correct. After that, the following commands can be used to generate the prediction for 9 loci on NA12878.
 
-An example of the TGC repeat from sequencing data is shown below:
+An example of the TGC repeat (for chr16:73546662-73546736) from sequencing data is shown below. As you can see, Nanopore data cannot identify this repeat from basecalled reads, due to the high error rates.
 ![TCG repeat](TGC_repeat.png)
 
 For chr16:73546662-73546736 with TGC repeats
