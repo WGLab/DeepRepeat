@@ -27,6 +27,8 @@ It would be better to make the folder organization of well-trained model follow 
 
 In Nanopore sequening data, the error rate for basecalled bases can vary greatly in repeat regions versus non-repeat regions. To understand this more, see the figure below on mismatch error percentage for long reads with different repeat length (Repeat regions: shown in the rectangles filled in yellow). G4C2 repeats: 76 repeat copies (a) and 8 repeat copies (b) for 2 synthetic sequences, and ~800 repeats (c) and 15 repeats (d) for a BAC clone. Each dot is for an averaged mismatch error of a 50bp region to reduce randomness.
 
+![mismatch error](mismatch_rate.png)
+
 ## Reproduce results for 9 loci and other loci
 
 ### For 9 loci
