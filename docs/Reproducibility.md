@@ -33,6 +33,9 @@ tar -xvf na12878_loci_nanopore.tar.gz
 
 You should have a subfolder `na12878_loci/` which contains 9 sub-folders for each of 9 loci. If no, please check your downloading or check the folder organization to make it correct. After that, the following commands can be used to generate the prediction for 9 loci on NA12878.
 
+An example of the TGC repeat from sequencing data is shown below:
+![TCG repeat](TGC_repeat.png)
+
 For chr16:73546662-73546736 with TGC repeats
 ```
 python DeepRepeat/bin/DeepRepeat.py Detect --gn hx1 --TempRem 0 --epchon 200 --repeat_relax_bp 20 --UniqueID TGC_chr16_73546662-73546736 --is_pcr 0 --repeatName TGC_chr16_73546662-73546736 --repeat chr16:73546662-73546736:TGC:3 --f5i na12878_loci/TGC_chr16_73546662-73546736/na.f5index --o test_op/TGC_chr16_73546662-73546736 --bam na12878_loci/TGC_chr16_73546662-73546736/TGC_chr16_73546662-73546736.bam --f5folder na12878_loci/TGC_chr16_73546662-73546736 --algLen 500 2>&1 | grep "GMM:"
