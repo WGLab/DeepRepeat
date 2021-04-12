@@ -131,7 +131,7 @@ Please refer to the [DeepRepeat issue pages](https://github.com/WGLab/DeepRepeat
 # Citing DeepRepeat
 ***Please cite the publication below if you use our tool***
 
-Qian Liu, Li Fang, Alex Mas Monteys, Beverly L. Davidson, Kai Wang. Direct detection and quantification of short tandem repeats 
+Qian Liu, Li Fang, Alex Mas Monteys, Pedro Gonzalez-Alegre, Beverly L. Davidson, Kai Wang. Direct detection and quantification of short tandem repeats 
 on ionic signal data from Nanopore sequencing.
 
 
