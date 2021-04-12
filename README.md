@@ -116,6 +116,9 @@ Common options for DeepRepeat:
 Please refer to [Reproducible examples](https://github.com/WGLab/DeepRepeat/blob/master/docs/Reproducibility.md)
 
 # Model design
+
+Illustration on how to convert Nanopore signals for deep learning prediction of simple repeats. Each dot in the curve in black represents an event (move) in Nanopore data, and is represented by a column in a channel. R: the size of repeat motif, for example, R=3 for trinucleotide repeats. Del: deletion indicating 1 bp deletion compared against the repeat motif of interest; Ins: insertion indicating 1 bp insertion compared against the repeat motif of interest. In the bottom and the left, an ideal image representation of repeat regions is white dots, while the image representation of non-repeat regions is dispersed red or blue or green or their less mixture. Each basecalled nucleotide in the sequence of the bottom subfigure is for a column but for demonstration purpose.
+
 ![DeepRepeat flowchart](docs/DeepRepeat_flowchart.png)
 
 # Revision history
