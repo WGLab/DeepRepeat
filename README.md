@@ -113,7 +113,8 @@ Common options for DeepRepeat:
 ```
 
 # Testing examples
-Please refer to [Reproducible examples](https://github.com/WGLab/DeepRepeat/blob/master/docs/Reproducibility.md)
+
+After you download the DeepRepeat software, if you want to test-run it, please refer to [Reproducible examples](https://github.com/WGLab/DeepRepeat/blob/master/docs/Reproducibility.md) to download the testing data sets. You can follow the step-by-step instructions in the page to see how to run the program and how to interpret the results.
 
 # Model design
 
