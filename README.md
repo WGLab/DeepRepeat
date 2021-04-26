@@ -20,7 +20,7 @@ Please refer to `environment.yml` for detail. For your quick reference, DeepRepe
 ```
 
 # Installation
-## Install LongGF with docker
+## Install DeepRepeat with docker
 
 If you have docker, a simple way to run DeepRepeat is to use docker. The simple commands is
 ```
