@@ -130,7 +130,7 @@ def detect(margs):
        _index_cmd = "{}/{} {} {} {} {} {}".format('/'.join(os.path.abspath(sys.argv[0]).split('/')[:-1]), "scripts/IndexF5files", prg_options["f5folder"], prg_options["basecalled_path"],  prg_options["f5i_basefile"], prg_options["summary_file"], prg_options["multif5"])
        print("Generating f5index: {}".format(_index_cmd))
        sys.stdout.flush()
-       #os.system(_index_cmd)
+       os.system(_index_cmd)
     if not os.path.isfile(prg_options["f5i"]):
        print("Error!! Cannot generate index file for {}.".format(prg_options["f5i"]))
     else:
