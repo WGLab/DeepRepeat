@@ -128,6 +128,10 @@ For release history, please visit [here](https://github.com/WGLab/DeepRepeat/rel
 # Getting help
 Please refer to the [DeepRepeat issue pages](https://github.com/WGLab/DeepRepeat/issues) for posting your issues. We will also respond your questions quickly. Your comments are criticl to improve our tool and will benefit other users.
 
+# License
+
+DeepRepeat is under GPLv3. 
+
 # Citing DeepRepeat
 ***Please cite the publication below if you use our tool***
 
