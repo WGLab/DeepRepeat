@@ -27,6 +27,8 @@ If you have docker, a simple way to run DeepRepeat is to use docker. The simple 
 docker run --rm genomicslab/deeprepeat:0.1.3
 ```
 
+If you have difficulty with running Docker in your computing environment, you can switch to podman, which allows end users to run docker containers on systems without escalated privileges. You may also try use Singularity instead which is another option for running docker images without escalated privileges. 
+
 If you can want to build docker images for DeepRepeat, please follow the commands below:
 ```
 git clone https://github.com/WGLab/DeepRepeat
@@ -135,7 +137,5 @@ DeepRepeat is under GPLv3.
 # Citing DeepRepeat
 ***Please cite the publication below if you use our tool***
 
-Qian Liu, Li Fang, Alex Mas Monteys, Pedro Gonzalez-Alegre, Beverly L. Davidson, Kai Wang. Direct detection and quantification of short tandem repeats 
-on ionic signal data from Nanopore sequencing.
-
+Fang L, Liu Q, Monteys AM, Gonzalez-Alegre P, Davidson BL, Wang K. [DeepRepeat: direct quantification of short tandem repeats on signal data from nanopore sequencing](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-022-02670-6). Genome Biol. 2022 Apr 28;23(1):108. doi: 10.1186/s13059-022-02670-6. PMID: 35484600; PMCID: PMC9052667.
 
