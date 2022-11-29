@@ -11,4 +11,4 @@ dependencies:
   - tensorflow=1.9
   - samtools
   - minimap2
-  - gxx_linux-64=9.3
+  - gxx_linux-64=7.5
