@@ -118,6 +118,10 @@ Common options for DeepRepeat:
 
 After you download the DeepRepeat software, if you want to test-run it, please refer to [Reproducible examples](https://github.com/WGLab/DeepRepeat/blob/master/docs/Reproducibility.md) to download the testing data sets. You can follow the step-by-step instructions in the page to see how to run the program and how to interpret the results.
 
+# Analzying your own samples
+
+DeepRepeat requires segmentation by event table from Albacore; however, only move table is produced by Guppy which is the gold standard basecaller now. Therefore, for analyzing your own sample (the FAST5 may not have basecall, or may already have Guppy basecall), you need to process FAST5 by Albacore. Please note that Nanopore no longer distribute Albacore in their software page. The software must be downloaded through the following link instead: https://mirror.oxfordnanoportal.com/software/analysis/ont_albacore-2.3.4-cp36-cp36m-manylinux1_x86_64.whl
+
 # Model design
 
 Illustration on how to convert Nanopore signals for deep learning prediction of simple repeats. Each dot in the curve in black represents an event (move) in Nanopore data, and is represented by a column in a channel. R: the size of repeat motif, for example, R=3 for trinucleotide repeats. Del: deletion indicating 1 bp deletion compared against the repeat motif of interest; Ins: insertion indicating 1 bp insertion compared against the repeat motif of interest. In the bottom and the left, an ideal image representation of repeat regions is white dots, while the image representation of non-repeat regions is dispersed red or blue or green or their less mixture. Each basecalled nucleotide in the sequence of the bottom subfigure is for a column but for demonstration purpose.
