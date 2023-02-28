@@ -2,6 +2,8 @@
 
 In DeepRepeat, we reasonably assume that directly adjacent repeats share similar signal distribution. And then, we convert a repeat and its upstream and downstream repeats into RGB channels of a color image, feed images of repeats and non-repeats into a deep convolutional neural network to learn whether an event of signals are in a repeat or not, and determine repeat counts for individuals by aligning long reads against a reference genome and by summarizing and modeling the repeat prediction for a certain allele from multiple reads with Gaussian mixture distribution. 
 
+If you are interested in STR detection from FASTQ reads, you are welcome to try our [NanoRepeat](https://github.com/WGLab/NanoRepeat) or [RepeatHMM](https://github.com/WGLab/repeathmm).
+
 # System requirements
 ## Hardware requirements
 There is specific hardware requirements to use DeepRepeat if you can successfully install all dependent packages. If you want to train your own DeepRepeat models, you need a computing node with tens of GB memory.
